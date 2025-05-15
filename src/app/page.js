@@ -35,18 +35,19 @@ export default function Home() {
       {/* HERO */}
       <section className="text-center py-12" data-aos="fade-up">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          🔥 ¡Los Mejores Sanguches de Tucumán!
+          🔥 Los Mejores Sanguches de Tucumán!
         </h1>
         <p className="text-lg md:text-xl mb-6 max-w-xl mx-auto">
           Milanesa, Hamburguesas y Lomitos bien tucumanos. Delivery rápido en San Miguel de Tucumán y alrededores...
         </p>
         <a
-          className="inline-block bg-green-600 text-white font-semibold text-lg px-6 py-3 rounded hover:bg-green-700 transition"
+          className="inline-flex items-center gap-2 bg-green-600 text-white font-semibold text-lg px-6 py-3 rounded hover:bg-green-700 transition"
           href="https://wa.me/5493815551111"
           target="_blank"
           rel="noopener noreferrer"
         >
-          📲 Pedí por WhatsApp
+          <img src="/whatsapp-icon.png" alt="WhatsApp" className="w-8 h-8 hover:bg-green-700 transition" />
+          Pedí por WhatsApp
         </a>
       </section>
 
@@ -109,20 +110,20 @@ export default function Home() {
         </h2>
         <div className="max-w-2xl mx-auto space-y-4 text-lg">
           <div className="flex justify-between border-b pb-2">
-            <span>⭐ Sanguche de Milanesa clásico</span>
-            <span>$4500</span>
+            <span>⭐ Sanguche de Milanesa Clásico</span>
+            <span><b>$4500</b></span>
           </div>
           <div className="flex justify-between border-b pb-2">
-            <span>🥓 Lomito completo con cheddar</span>
-            <span>$5500</span>
+            <span>🥓 Lomito Completo con Cheddar</span>
+            <span><b>$5000</b></span>
           </div>
           <div className="flex justify-between border-b pb-2">
-            <span>🍔 Hamburguesa doble con papas</span>
-            <span>$6200</span>
+            <span>🍔 Hamburguesa Doble con Papas</span>
+            <span><b>$6200</b></span>
           </div>
           <div className="flex justify-between border-b pb-2">
-            <span>🥤 Combo + bebida</span>
-            <span>$7500</span>
+            <span>🥤 Combo + Bebida 2Lts</span>
+            <span><b>$7500</b></span>
           </div>
         </div>
       </section>
@@ -151,7 +152,7 @@ export default function Home() {
       {/* FORMULARIO DE CONTACTO */}
       <section className="py-12 bg-gray-50 rounded-xl">
         <h2 className="text-2xl font-semibold text-center mb-6">📬 Contactanos</h2>
-        <form className="max-w-xl mx-auto bg-white shadow-lg rounded-xl p-8 space-y-4">
+        <form className="max-w-xl mx-auto bg-white shadow-lg rounded-xl p-8 space-y-4 bg-opacity-100 z-10 relative">
           <input type="text" placeholder="Nombre" className="border border-gray-300 p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-500" />
           <input type="email" placeholder="Email" className="border border-gray-300 p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-500" />
           <textarea placeholder="Mensaje" className="border border-gray-300 p-3 rounded w-full h-32 focus:outline-none focus:ring-2 focus:ring-green-500" />
@@ -180,7 +181,7 @@ export default function Home() {
       </section>
 
       {/* CTA FINAL */}
-       <section className="text-center py-12 bg-yellow-50 rounded-xl px-4" data-aos="zoom-in">
+      <section className="text-center py-12 bg-yellow-50 rounded-xl px-4" data-aos="zoom-in">
         <h2 className="text-3xl font-bold mb-4">
           👋 ¿Esperás qué?
         </h2>
@@ -188,18 +189,39 @@ export default function Home() {
           Hacé tu pedido ahora y disfrutá un sanguche como se debe.
         </p>
         <a
-          className="inline-block bg-green-600 text-white font-semibold text-lg px-6 py-3 rounded hover:bg-green-700 transition"
+          className="inline-flex items-center gap-2 bg-green-600 text-white font-semibold text-lg px-6 py-3 rounded hover:bg-green-700 transition"
           href="https://wa.me/5493815551111"
           target="_blank"
           rel="noopener noreferrer"
         >
-          📲 Quiero pedir ahora
+          Quiero pedir ahora
+          <img src="/whatsapp-icon.png" alt="WhatsApp" className="w-8 h-8" />
         </a>
       </section>
 
       {/* FOOTER */}
       <footer className="text-center text-sm text-gray-500 mt-12">
-        📍 Marcos Paz 550, San Miguel de Tucumán | 🕘 Todos los días de 20:00 a 01:00 | ☎️ 381 555 1111 | IG: @sanguche.argento
+        <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center sm:gap-2 gap-3">
+          <div className="flex items-center gap-1 justify-center">
+            <img src="/mapa.png" alt="Dirección" className="w-5 h-5" />
+            Marcos Paz 550, San Miguel de Tucumán
+          </div>
+          <span className="hidden sm:inline mx-2">|</span>
+          <div className="flex items-center gap-1 justify-center">
+            <img src="/reloj.png" alt="Horario" className="w-5 h-5" />
+            Todos los días de 20:00 a 01:00
+          </div>
+          <span className="hidden sm:inline mx-2">|</span>
+          <div className="flex items-center gap-1 justify-center">
+            <img src="/telefono.png" alt="Teléfono" className="w-5 h-5" />
+            381 555 1111
+          </div>
+          <span className="hidden sm:inline mx-2">|</span>
+          <div className="flex items-center gap-1 justify-center">
+            <img src="/instagram.png" alt="Instagram" className="w-5 h-5" />
+            @sanguche.argento
+          </div>
+        </div>
       </footer>
     </main>
   );
